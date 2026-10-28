@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="menu-icon">☰</div>
+    <div class="logo">▶ My<span>Tube</span></div>
+     <input
+        class="search"
+        id="search"
+        type="text"
+        placeholder="Szukaj filmów..."
+    >
+    </header>
+    
+    <nav class="sidebar">
+    <a href="#" class="active">⌂ &nbsp; Strona główna</a>
+    <a href="#na-czasie">♨ &nbsp; Na czasie</a>
+    <a href="#filmy">▣ &nbsp; Subskrypcje</a>
+    <a href="#historia">◷ &nbsp; Historia</a>
+
+    <p class="menu-title">ODKRYWAJ</p>
+
+    <a href="#muzyka">♫ &nbsp; Muzyka</a>
+    <a href="#gry">🎮 &nbsp; Gry</a>
+    <a href="#filmy">▷ &nbsp; Filmy</a>
+</nav>
+<main>
+    <h1>Polecane filmy</h1>
+
+    <div class="videos" id="filmy">
+
+        <div class="video">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Góry">
+                <span class="duration">10:24</span>
+            </div>
+            <div class="info">
+                <h3>Najpiękniejsze miejsca w Polsce – TOP 10</h3>
+                <p>Podróże po Polsce</p>
+                <p>125 tys. wyświetleń • 2 dni temu</p>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Komputer">
+                <span class="duration">12:37</span>
+            </div>
+            <div class="info">
+                <h3>Jak złożyć tani komputer do gier?</h3>
+                <p>TechWorld</p>
+                <p>342 tys. wyświetleń • tydzień temu</p>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80" alt="Kot">
+                <span class="duration">8:15</span>
+            </div>
+            <div class="info">
+                <h3>Najzabawniejsze koty w internecie</h3>
+                <p>Świat Zwierząt</p>
+                <p>98 tys. wyświetleń • 4 dni temu</p>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Jezioro">
+                <span class="duration">14:52</span>
+            </div>
+            <div class="info">
+                <h3>Spokojne jezioro – idealny relaks</h3>
+                <p>Natura Relax</p>
+                <p>221 tys. wyświetleń • 6 dni temu</p>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80" alt="Miasto">
+                <span class="duration">11:36</span>
+            </div>
+            <div class="info">
+                <h3>Najpiękniejsze miasta świata</h3>
+                <p>Ciekawy Świat</p>
+                <p>178 tys. wyświetleń • 5 dni temu</p>
+            </div>
+        </div>
+
+        <div class="video">
+            <div class="thumbnail">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Zachód słońca">
+                <span class="duration">9:42</span>
+            </div>
+            <div class="info">
+                <h3>10 sposobów na lepsze samopoczucie</h3>
+                <p>Zdrowe Życie</p>
+                <p>64 tys. wyświetleń • 3 dni temu</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="section-title" id="na-czasie">Na czasie</h1>
+    <p class="section-description">Popularne materiały w MyTube</p>
+</main>
+<script>
+const search = document.getElementById("search");
+const videos = document.querySelectorAll(".video");
+
+search.addEventListener("input", () => {
+    const text = search.value.toLowerCase();
+
+    videos.forEach(video => {
+        video.style.display =
+            video.innerText.toLowerCase().includes(text)
+            ? ""
+            : "none";
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+#sidebar {
+  width: 244px;
+  height: 100vh; /* tego nie bylo; oznacza 100% wysokosci przegladarki */
+  border-right: 1px solid #dbdbdb;
+  padding: 8px 12px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar > header {
+  padding: 32px 12px;
+}
+
+#sidebar > div {
+  flex: 1; /* tego nie bylo; pozwala rozszerzac diva maks. ile sie da*/
+}
+
+#sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* tego nie bylo; pozwala oddalic od siebie dzieciaki */
+}
+
+#sidebar ul a {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+}
+
+#sidebar ul a:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+#sidebar ul a:hover img {
+  scale: 1.05;
+  transition: 0.2s;
+}
+
+#sidebar ul a:active {
+  opacity: 0.5;
+}
+
+#sidebar ul a:active img {
+  scale: 0.95;
+}

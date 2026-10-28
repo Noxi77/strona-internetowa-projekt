@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/nav.css" />
+    <link rel="stylesheet" href="./style/shared.css" />
+    <link rel="stylesheet" href="./style/sidebar.css" />
+    <link rel="stylesheet" href="./style/post.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/logo.svg" alt="Logo" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#" class="selected">
+              <img class="icon" src="./assets/home.svg" alt="home icon" />
+              <span>Strona główna</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="./assets/search.svg" alt="search icon" />
+              <span>Szukaj</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="./assets/compass.svg" alt="explore icon" />
+              <span>Eksploruj</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="./assets/reels.svg" alt="reels icon" />
+              <span>Rolki</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="./assets/direct.svg" alt="message icon" />
+              <span>Wiadomości</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="icon"
+                src="./assets/heart.svg"
+                alt="notification icon"
+              />
+              <span>Powiadomienia</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="./assets/add-post.svg" alt="create icon" />
+              <span>Utwórz</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="icon avatar"
+                src="./assets/johndoe.jpg"
+                alt="profile icon"
+              />
+              <span>Profil</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="other">
+        <ul>
+          <li>
+            <a href="#">
+              <img class="icon" src="./assets/threads.svg" alt="threads icon" />
+              <span>Threads</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="./assets/hamburger.svg" alt="more icon" />
+              <span>Więcej</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <main>
+        <nav>
+          <ul>
+            <li>
+              <a class="selected" href="#">Dla Ciebie</a>
+            </li>
+            <li>
+              <a href="#">Obserwowani</a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <section class="stories">
+          <button class="story">
+            <div class="gradient">
+              <img
+                class="avatar large"
+                src="./assets/janedoe.jpg"
+                alt="user photo"
+              />
+            </div>
+            <div class="username">
+              <small>janedoe</small>
+            </div>
+          </button>
+          <button class="story">
+            <div class="gradient">
+              <img
+                class="avatar large"
+                src="./assets/janedoe.jpg"
+                alt="user photo"
+              />
+            </div>
+            <div class="username">
+              <small>janedoe</small>
+            </div>
+          </button>
+          <button class="story">
+            <div class="gradient">
+              <img
+                class="avatar large"
+                src="./assets/janedoe.jpg"
+                alt="user photo"
+              />
+            </div>
+            <div class="username">
+              <small>janedoe</small>
+            </div>
+          </button>
+        </section>
+        <section class="posts">
+          <article class="post">
+            <header>
+              <img class="avatar small" src="./assets/johndoe.jpg" />
+              <div class="info">
+                <span>johndoe</span>
+                <span>6 dni</span>
+              </div>
+              <div class="options">
+                <img
+                  class="icon"
+                  src="./assets/three-dots.svg"
+                  alt="more icon"
+                />
+              </div>
+            </header>
+            <div class="content">
+              <img src="./assets/post-1.jpg" />
+            </div>
+            <footer>
+              <ul class="reactions">
+                <li>
+                  <img class="icon" src="./assets/heart.svg" alt="like icon" />
+                </li>
+                <li>
+                  <img
+                    class="icon"
+                    src="./assets/comment.svg"
+                    alt="comment icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="icon"
+                    src="./assets/direct.svg"
+                    alt="share icon"
+                  />
+                </li>
+              </ul>
+              <div class="stat">
+                <span>Liczba polubień:</span>
+                <span>12 313</span>
+              </div>
+              <p class="description">
+                <span class="author">johndoe</span> Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Neque eum accusantium, ut non
+                blanditiis incidunt illum aperiam reprehenderit explicabo est
+                rerum mollitia eaque, autem accusamus expedita animi commodi.
+                Modi, consectetur!
+              </p>
+              <div class="comment-creator">
+                <input type="text" placeholder="Dodaj komentarz..." />
+                <img src="./assets/emoji.svg" />
+              </div>
+            </footer>
+          </article>
+        </section>
+      </main>
+      <aside class="sidebar">
+        <section>
+          <div class="person">
+            <img src="./assets/johndoe.jpg" alt="" class="avatar medium" />
+            <div>
+              <span>johndoe</span>
+              <span>John Doe</span>
+            </div>
+            <button>Przełącz</button>
+          </div>
+        </section>
+        <section>
+          <header>
+            <h5>Propozycje dla Ciebie</h5>
+            <a href="#"><small>Zobacz wszystkich</small></a>
+          </header>
+          <div class="person">
+            <img src="./assets/johnsmith.jpg" alt="" class="avatar medium" />
+            <div>
+              <span>johnsmith</span>
+              <span>Propozycje dla Ciebie</span>
+            </div>
+            <button>Obserwuj</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li>
+              <a href="#"><small>Informacje</small></a>
+            </li>
+            <li>
+              <a href="#"><small>Pomoc</small></a>
+            </li>
+            <li>
+              <a href="#"><small>Prasa</small></a>
+            </li>
+            <li>
+              <a href="#"><small>API</small></a>
+            </li>
+            <li>
+              <a href="#"><small>Praca</small></a>
+            </li>
+            <li>
+              <a href="#"><small>Prywatność</small></a>
+            </li>
+            <li>
+              <a href="#"><small>Lokalizacje</small></a>
+            </li>
+            <li>
+              <a href="#"><small>Regulamin</small></a>
+            </li>
+            <li>
+              <a href="#"><small>Język</small></a>
+            </li>
+            <li>
+              <a href="#"><small>Meta Verified</small></a>
+            </li>
+          </ul>
+          <small class="copyright">(C) 2023 Instagram from Meta</small>
+        </footer>
+      </aside>
+    </div>
+  </body>
+</html>

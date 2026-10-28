@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+header {
+  height: 80px;
+  background: #151515;
+  border-bottom: 1px solid #303030;
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+  gap: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.menu-icon {
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #ff2525;
+}
+.logo span {
+  color: white;
+}
+.search {
+  width: 500px;
+  height: 45px;
+  padding: 0 20px;
+  border: 1px solid #444;
+  border-radius: 30px;
+  background: #101010;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+.search:focus {
+  border-color: #777;
+}
+.sidebar {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  bottom: 0;
+  width: 303px;
+  padding: 25px 17px;
+  background: #111;
+  border-right: 1px solid #303030;
+}
+
+.sidebar a {
+  display: block;
+  color: #eee;
+  text-decoration: none;
+  padding: 16px 22px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.sidebar a:hover {
+  background-color: #292929;
+}
+.sidebar .active {
+  background-color: #292929;
+  border-left: 4px solid #ff2525;
+}
+.menu-title {
+  color: #999;
+  padding: 25px 17px 10px;
+  font-family: 13px;
+}
+main {
+  margin-left: 303px;
+  padding: 115px 33px 40px;
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+.videos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px 25px;
+}
+.video {
+  min-width: 0;
+  cursor: pointer;
+}
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #242424;
+  margin-bottom: 13px;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s;
+}
+.video:hower .thumbnail {
+  transform: scale(1.05);
+}
+.duration {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 5px 7px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.info {
+  padding: 0 2px;
+}
+.info h3 {
+  font-size: 16px;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+.info p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.section-title {
+  margin-top: 50px;
+}
+.section-description {
+  color: #aaa;
+  margin-bottom: 25px;
+}
+@media (max-width: 1200px) {
+  .sidebar {
+    width:;
+  }
+}

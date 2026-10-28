@@ -1,0 +1,15 @@
+main{
+    max-width: 630px;
+    width: 100%;
+
+}
+
+main > nav > ul{
+    display: flex;
+    gap: 12px;
+    font-weight: bold;
+}
+
+main > nav > ul > li > a:not(.selected){
+    color:rgba(199, 199,199)
+}

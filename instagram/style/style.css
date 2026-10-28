@@ -1,0 +1,64 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+}
+
+body > div.content{
+  display: flex;
+  padding-inline: 16px;
+  padding-top: 45px;
+}
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* tego nie bylo; kolor dziedziczony po przodkach */
+}
+
+button{
+background: transparent;
+border: none;
+}
+
+ul {
+  list-style-type: none; /* tego nie bylo; usuwa kropki przed <li> */
+  margin: 0;
+  padding: 0;
+}
+
+img.icon {
+  width: 24px;
+  height: 24px;
+}
+
+img.avatar {
+  border-radius: 50%;
+}
+
+
+img.avatar.small{
+  width: 32px;
+  height: 32px;
+}
+
+img.avatar.medium{
+  width: 44px;
+  height: 44px;
+}
+
+img.avatar.large{
+  width: 56px;
+  height: 56px;
+}
+div.gradient{
+  background: linear-gradient(45deg, #ffc502, #fe2b45, #d300c5);
+  border-radius: 50%;
+  padding: 2px;
+  display: flex;
+}
+div.gradient > img{
+  border: 2px solid white;
+}
