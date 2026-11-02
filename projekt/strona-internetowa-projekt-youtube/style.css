@@ -1,4 +1,4 @@
-git commit -m "aktualizacja"* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -82,7 +82,7 @@ header {
 .menu-title {
   color: #999;
   padding: 25px 17px 10px;
-  font-family: 13px;
+  font-size: 13px;
 }
 main {
   margin-left: 303px;
@@ -117,7 +117,7 @@ h1 {
   display: block;
   transition: transform 0.25s;
 }
-.video:hower .thumbnail {
+.video:hover .thumbnail {
   transform: scale(1.05);
 }
 .duration {
@@ -151,6 +151,20 @@ h1 {
 }
 @media (max-width: 1200px) {
   .sidebar {
-    width:;
+    width: 80px;
+  }
+  main {
+    margin-left: 80px;
+  }
+  .videos {
+    grid-template-columns: 300px 300px;
+  }
+}
+@media (max-width: 800px) {
+  .search {
+    width: 100%;
+  }
+  .videos {
+    grid-template-columns: 300px;
   }
 }
