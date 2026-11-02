@@ -114,20 +114,6 @@
         <p class="section-description">Popularne materiały w MyTube</p>
     </main>
 
-    <script>
-        const search = document.getElementById("search");
-        const videos = document.querySelectorAll(".video");
-
-        search.addEventListener("input", () => {
-            const text = search.value.toLowerCase().trim();
-
-            videos.forEach(video => {
-                const title = video.querySelector("h3").innerText.toLowerCase();
-                const channel = video.querySelector(".info p").innerText.toLowerCase();
-                const match = title.includes(text) || channel.includes(text);
-                video.style.display = match ? "" : "none";
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

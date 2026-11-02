@@ -168,3 +168,9 @@ h1 {
     grid-template-columns: 300px;
   }
 }
+.menu-hidden .sidebar {
+  display: none;
+}
+.menu-hidden main {
+  margin-left: 0;
+}
